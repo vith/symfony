@@ -271,6 +271,7 @@ class Configuration implements ConfigurationInterface
                             ->defaultValue('0')
                             ->info('seconds to wait between 2 session metadata updates, it will also prevent the session handler to write if the session has not changed')
                         ->end()
+                        ->scalarNode('serialize_handler')->end()
                     ->end()
                 ->end()
             ->end()
